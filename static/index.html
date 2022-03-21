@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Text Area 3</title>
+
+  <!-- CIRCUIT-->
+
+  <link rel="icon" href="../circuit-sandbox-master/favicon.ico" type="image/x-icon" />
+  <link rel="canonical" href="https://spinningnumbers.org/circuit-sandbox/" />
+  <link rel="stylesheet" href="../circuit-sandbox-master/sandbox.css" />
+
+  <!-- <script type="text/javascript" src="../circuit-sandbox-master/js/hammer.min.js"></script>
+  <script src="https://kit.fontawesome.com/9defb49fb8.js"></script>
+  <script type="text/javascript" src="../circuit-sandbox-master/js/download.js"></script>
+  <script type="text/javascript" src="../circuit-sandbox-master/js/language.js"></script>
+  <script type="text/javascript" src="../circuit-sandbox-master/js/fet_vsp.js"></script>
+  <script type="text/javascript" src="../circuit-sandbox-master/js/fet_vsparms.js"></script>
+  <script type="text/javascript" src="../circuit-sandbox-master/js/cktsimvsp_sn.js"></script>
+	<script type="text/javascript" src="../circuit-sandbox-master/js/schematic.js"></script>
+  <script src="dist/bundle.js"></script>     -->
+</head>
+<body>
+  <style>
+    textarea {
+      font: 14px/1.3 sans-serif;
+      padding: 4px 8px;
+      height: 100%;
+      width: 60%;
+      box-sizing: border-box;
+    }
+  </style>
+    
+  <h1>Text Area 3</h1>
+  <p>Connection Status: <span id="status-span"></span></p>
+  <textarea autofocus></textarea><br>
+
+  <!-- CIRCUIT -->
+  <input type="hidden" class="schematic" height="460" width="800">
+
+  <p>
+	  Circuit Sandbox Simulator  &nbsp; &nbsp; &nbsp; &nbsp;
+	  <a href="https://spinningnumbers.org">spinningnumbers.org</a> &#8275;
+	  <a href="https://spinningnumbers.org/a/circuit-sandbox.html">help</a> &#8275; 
+	  <a href="https://github.com/willymcallister/circuit-sandbox">github</a> &nbsp; &nbsp; &nbsp; &nbsp; 
+
+    <select id="languageSelect" onchange="dropdownChange()">
+      <option value="en-US">Language: English</option>
+      <option value="es">Idioma: Español</option>
+      <option value="fr">Langue: Français</option>
+      <option value="pt">Idioma: Portugues</optionvalue>
+      <option value="hu">Nyelv: Magyar (Hungarian)</option>
+      <option value="ja">言語：日本語 (Japanese)</option>
+      <option value="hi">भाषा: हिंदी (Hindi)</option>
+      <option value="zh-CN">语言：简体中文 (Simplified Chinese)</option>
+    </select>
+	</p>
+
+  <script>			
+	  var dropdown = document.getElementById('languageSelect');
+		// dropdown.value = lang; 		// set the dropdown default value
+			
+		function dropdownChange() {
+			var selectedLang = dropdown.options[dropdown.selectedIndex].value;
+			switchLanguage(selectedLang);
+			window.localStorage.setItem('language', selectedLang);
+   		}
+  </script>
+    
+    <script type="text/javascript" src="../circuit-sandbox-master/js/hammer.min.js"></script>
+    <script src="https://kit.fontawesome.com/9defb49fb8.js"></script>
+    <script type="text/javascript" src="../circuit-sandbox-master/js/download.js"></script>
+    <script type="text/javascript" src="../circuit-sandbox-master/js/language.js"></script>
+    <script type="text/javascript" src="../circuit-sandbox-master/js/fet_vsp.js"></script>
+    <script type="text/javascript" src="../circuit-sandbox-master/js/fet_vsparms.js"></script>
+    <script type="text/javascript" src="../circuit-sandbox-master/js/cktsimvsp_sn.js"></script>
+    <script type="text/javascript" src="../circuit-sandbox-master/js/schematic.js"></script>
+    <script src="dist/bundle.js"></script>  
+  
+</body>
+</html>
