@@ -1,11 +1,6 @@
-# Collaborative Textarea with ShareDB
+## TXT + CKT (OT)
 
-This is a collaborative plain textarea using the default ShareDB JSON document
-type and the `sharedb-string-binding` module.
-
-In this demo, data is not persisted. To persist data, run a Mongo
-server and initialize ShareDB with the
-[ShareDBMongo](https://github.com/share/sharedb-mongo) database adapter.
+For fixing
 
 ## Install dependencies
 ```
